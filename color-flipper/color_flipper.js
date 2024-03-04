@@ -18,7 +18,7 @@ hex.addEventListener("click", () => {
     bg.style.backgroundColor = `#F1F5F8`
     value.innerHTML = `#F1F5F8`
 })
-
+    
 rgb.addEventListener("click", () => {
     hex_on = false
     rgb_on = true
