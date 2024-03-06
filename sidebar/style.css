@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    background-color: hsl(210, 36%, 96%);
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.nav-center {
+    position: relative;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} 
+
+h1 {
+    margin: 0;
+    text-shadow: 1px 3px 5px rgba(0 ,0 ,0 ,.4);
+    font-weight: 100;
+    font-family: sans-serif;
+    letter-spacing: .2rem;
+}
+
+.colored {
+    color: #49a6e9;
+}
+
+.links {
+    font-family: 'Open Sans';
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.links li{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.links li a {
+    text-decoration: none;
+    color: black;
+    transition: color .3s ease;
+}
+
+.links li a:hover {
+    color: #49a6e9;
+}
+
+
+a:visited {
+    color: black;
+}
+
+.fab {
+    font-family: 'Font Awesome 5';
+}
+
+.socials li {
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    margin-left: 1.5rem;
+    color: #49a6e9;;
+}
+
+.hamburger {
+    position: absolute;
+    font-size: 1.6rem;
+    right: 0%;
+    top: 25%;
+    color: #49a6e9;
+    display: none;
+    transition: transform 0.5s ease;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+.mobile-links {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: start;
+    margin: 0;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+    display: none;
+    transition: all 1s ease;
+    overflow: hidden;
+    background-color: aliceblue;
+}
+
+.mobile-links li {
+    padding: 1rem;
+    transition: all 0.5s ease;
+    font-family: "Open Sans";
+    /* display: none; */
+}
+
+.mobile-menu {
+    transition: all 1s ease;
+    overflow: hidden;
+    height: 0rem;
+    background: transparent;
+    background-color: hsl(210, 36%, 96%);
+    /* display: none; */
+}
+
+.mobile-links li:hover {
+    background-color: rgba(73, 166, 233, .5);
+    cursor: pointer;
+    color: #49a6e9;
+    padding-left: 2rem;
+}
+
+.mobile-links li a {
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    .header {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .links{
+        display: none;
+    }
+    .socials {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    
+    .mobile-links {
+        display: block;
+    }
+}
